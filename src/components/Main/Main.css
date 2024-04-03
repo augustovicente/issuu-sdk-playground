@@ -1,0 +1,102 @@
+.main-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.main-buttons {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 48px;
+
+  & button {
+    background-color: #5d6558;
+    border: none;
+    padding: 4px;
+    box-shadow: -1px -1px 1px #9e9e9e, 1px 1px 1px #333333;
+    color: white;
+  }
+
+  & button.selected {
+    color: #a6af4d;
+    box-shadow: inset 1px 1px 1px #333333, inset -1px -1px 1px #9e9e9e;
+  }
+}
+
+.main-render {
+  background-color: #3e4637;
+  height: 100%;
+  flex: 1;
+  padding: 16px;
+  box-shadow: inset 1px 1px 1px #333333, inset -1px -1px 1px #9e9e9e;
+}
+
+.main-render:has(> .empty-state) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.publication-data,
+.draft-data {
+  display: flex;
+  gap: 16px;
+
+  & a {
+    color: #a6af4d;
+  }
+
+  & a:hover {
+    cursor: pointer;
+  }
+
+  & span {
+    color: #9e9e9e;
+  }
+
+  & button {
+    background-color: transparent;
+    border: none;
+    padding: 4px;
+    box-shadow: -1px -1px 1px #9e9e9e, 1px 1px 1px #333333;
+    color: white;
+    margin-left: auto;
+  }
+
+  & button:active {
+    color: #a6af4d;
+    box-shadow: inset 1px 1px 1px #333333, inset -1px -1px 1px #9e9e9e;
+  }
+
+  & button:hover {
+    cursor: pointer;
+  }
+}
+
+.embed-data div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+
+  & input {
+    width: 100%;
+    background: transparent;
+    border: 2px solid #5d6558;
+    padding: 8px;
+    color: #9e9e9e;
+  }
+
+  & span {
+    flex-shrink: 0;
+    color: #9e9e9e;
+  }
+}
+
+.empty-state {
+  color: #9e9e9e;
+  font-size: 24px;
+  max-width: 450px;
+  text-align: center;
+}

@@ -10,8 +10,8 @@
         "preview": "vite preview"
     },
     "dependencies": {
+        "@issuu/issuu-api-sdk": "^0.0.1",
         "axios": "^1.6.8",
-        "issuu-sdk": "file:../api-sdk",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-toastify": "^10.0.5",

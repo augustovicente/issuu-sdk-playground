@@ -1,4 +1,4 @@
-import IssuuSDK from 'issuu-sdk';
+import IssuuSDK from "@issuu/issuu-api-sdk";
 
 export function useIssuuSDK() {
     const token: string = localStorage.getItem('token')!;

@@ -1,6 +1,6 @@
 import { useIssuuSDK } from "@/hooks/useIssuuSDK";
 import { LoadingStore, useLoadingStore } from "@/hooks/usePageLoading";
-import { GetMyDraftsResult } from "issuu-sdk/types";
+import { GetMyDraftsResult } from "@issuu/issuu-api-sdk/types";
 import { useEffect, useState } from "react";
 
 export const DraftPage = () => {

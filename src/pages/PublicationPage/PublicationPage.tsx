@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { GetMyPublicationsResult } from "issuu-sdk/types";
+import { GetMyPublicationsResult } from "@issuu/issuu-api-sdk/types";
 import { useIssuuSDK } from "@/hooks/useIssuuSDK";
 import { LoadingStore, useLoadingStore } from "@/hooks/usePageLoading";
 

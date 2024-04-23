@@ -6,7 +6,7 @@ import {
     GetMyPublicationsResult,
     GetMyStacksResult,
     GetMyStatsResult
-} from "issuu-sdk/types";
+} from "@issuu/issuu-api-sdk/types";
 import { useEffect, useState } from "react";
 
 export const UserPage = () => {

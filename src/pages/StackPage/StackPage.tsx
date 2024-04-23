@@ -1,6 +1,6 @@
 import { useIssuuSDK } from "@/hooks/useIssuuSDK";
 import { LoadingStore, useLoadingStore } from "@/hooks/usePageLoading";
-import { GetMyStacksResult } from "issuu-sdk/types";
+import { GetMyStacksResult } from "@issuu/issuu-api-sdk/types";
 import { useEffect, useState } from "react";
 
 export const StackPage = () => {

@@ -4,6 +4,12 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="https://static.isu.pub/fe/product-landing-pages-frontend/e0fd412/src/universal/assets/brand-package/issuu-logos/png/issuu-logo-symbol-colour.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            window.process = {
+                ...window.process,
+                env: { ISSUU_API_SDK_URL: 'https://api.issuu.com/v2/' } 
+            };
+        </script>
         <title>SDK Playground</title>
     </head>
     <body>
